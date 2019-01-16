@@ -1,0 +1,52 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import enties.Quartos;
+
+public class Pensao {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Quartos [] quartos = new Quartos [10];
+		
+		System.out.println("Digite o numero de estudantes de 1 a 10:");
+		int estudantes = sc.nextInt();
+				
+		String nome;
+		String email;
+		int quarto;
+		
+		for (int i = 0; i < estudantes; i++) {
+			
+			System.out.println("Digite o nome:");
+			nome = sc.nextLine();
+			sc.nextLine();
+			
+			System.out.println("Digite Email:");
+			email = sc.nextLine();
+		
+			System.out.println("Digite Quarto:");
+			quarto = sc.nextInt();
+			
+			quartos [quarto] = new Quartos (nome, email);
+			
+			
+	   	}
+			for (int i = 0; i < quartos.length;i++) {
+				if (quartos[i]!= null) {
+					
+				System.out.println(quartos[i]);
+			
+				}
+			}
+		      
+		
+		sc.close();
+    	
+ 
+	}
+}

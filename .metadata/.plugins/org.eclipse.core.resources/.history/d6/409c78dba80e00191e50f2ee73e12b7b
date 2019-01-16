@@ -1,0 +1,12 @@
+
+public class test {
+
+	public static void main(String[] args) {
+	
+		DiaSemana dia = DiaSemana.SEGUNDA;
+		
+		System.out.print(dia.toString() + " - " + dia.getValor());
+
+	}
+
+}

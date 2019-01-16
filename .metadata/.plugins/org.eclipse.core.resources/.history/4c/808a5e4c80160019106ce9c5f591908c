@@ -1,0 +1,13 @@
+package util;
+
+public class calculodolar {
+
+	public static final double dolar = 3.10;
+	
+	public static double CalculaDolar(double quantidade) {
+		
+		return dolar * quantidade;
+		
+	}
+	
+}

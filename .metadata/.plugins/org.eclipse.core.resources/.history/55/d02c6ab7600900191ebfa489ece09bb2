@@ -1,0 +1,20 @@
+package Main;
+
+class Fatorial{
+	
+	int fat (int n) {
+		if(n <= 1 )
+			return 1;
+		int r = fat (n-1)*n;
+		return r;
+	}
+	
+}
+
+
+public class recursiva {
+	public static void main (String []args) {
+		System.out.print(new Fatorial().fat(5));
+	}
+
+}

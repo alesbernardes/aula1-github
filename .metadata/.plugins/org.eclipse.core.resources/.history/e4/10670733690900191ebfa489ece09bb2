@@ -1,0 +1,29 @@
+package Main;
+
+class Contagem {
+	
+	// Construtor
+	
+	Contagem(){
+		
+		System.out.println("Estamos contando");
+	}
+	
+	void imprime(int j, int i) {
+	    
+		System.out.println(j / i);
+		
+	}
+	
+}
+
+
+public class Contas {
+	
+	public static void main(String []args) {
+	
+		new Contagem().imprime(8,4);
+}
+	
+	
+}

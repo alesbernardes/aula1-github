@@ -1,0 +1,37 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import enties.Conta;
+
+public class AberturaConta {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		Conta contas = new Conta(numero, nome, inicialDeposito);
+		
+		System.out.println("Entre com o numero da conta: ");
+		int Nconta = sc.nextInt();
+		System.out.println("Entre com o nome :");
+		sc.nextLine();
+		String nome = sc.nextLine();
+		System.out.println("Tem deposito inicial ? S/N ");
+		char resposta = sc.next().charAt(0);
+				
+		if (resposta == 's' || resposta == 'S') {
+		
+			System.out.println("Entre com o deposito inicial: ");
+			double depinicial = sc.nextDouble();
+			
+			contas = new Cont
+			
+		}
+		
+		
+		sc.close();
+	}
+
+}

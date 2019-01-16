@@ -1,0 +1,22 @@
+package Main;
+
+class Contagem {
+	
+	void imprime(int j, int i) {
+	    
+		System.out.println(j / i);
+		
+	}
+	
+}
+
+
+public class Contas {
+	
+	public static void main(String []args) {
+	
+		new Contagem().imprime(2,4);
+}
+	
+	
+}

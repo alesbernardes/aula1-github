@@ -1,0 +1,19 @@
+package application;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Date;
+
+public class Datas {
+
+	public static void main(String[] args) {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/aaaa");
+		Date d = Date.from(Instant.parse("2019/01/16"));
+		
+		System.out.println(sdf.format(d));
+		
+
+	}
+
+}
